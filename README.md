@@ -2,7 +2,7 @@
 Align Wikipedia documents based on interlanguage links 
 
 ## Compatability 
-This code is requires python 3.x 
+This code requires python 3.x 
 
 ## Installation
 
@@ -10,12 +10,20 @@ To use this tool, you must install requirements
 
 ```pip install -r requirements.txt```
 
+or if Python alias is not setup on your system:
+
+```pip3 install -r requirements.txt```
+
 ## Usage example:
 
 ### aligner.py
 align wikipedia documents given that you have the sql of interlanugage links and document extracts 
 
-```python aligner.py --src-lang ar --target-lang arz --sql-file data/arwiki-20170120-langlinks.sql --src-corpus data/wiki/arwiki --target-corpus data/wiki/arzwiki --out-dir data/out/```
+```python aligner.py --src-lang en --target-lang ka --sql-file data/enwiki-latest-langlinks.sql --src-corpus data/enwiki --target-corpus data/kawiki --out-dir data/out/```
+
+or if Python alias is not setup on your system:
+
+```python3 aligner.py --src-lang en --target-lang ka --sql-file data/enwiki-latest-langlinks.sql --src-corpus data/enwiki --target-corpus data/kawiki --out-dir data/out/```
 
 ### Arguments
 ```
